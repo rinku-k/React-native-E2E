@@ -1,0 +1,3 @@
+rootProject.name = 'E2E'
+
+include ':app'
