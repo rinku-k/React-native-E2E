@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = state => ({
-  newText: state.newText ? state.newText.text : 'You look new Here',
+  newText: state.newText,
 });
 
 const mapDispatchToProps = dispatch => ({

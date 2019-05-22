@@ -1,7 +1,9 @@
+import { combineReducers } from 'redux';
 import newText from './textChange';
 
-const reducers = {
-  newText,
-};
 
-export default reducers;
+const reducers = combineReducers({
+  newText,
+});
+
+export default newText;
