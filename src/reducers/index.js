@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
-import newText from './textChange';
+import textState from './textChange';
+import feeds from './fetchfeeds';
 
-// const reducers = combineReducers({
-//   newText,
-// });
-
-const reducers = (state = defaultState, action) => ({
-  ...newText(state = defaultState, action),
+const reducers = combineReducers({
+  textState,
+  feeds,
 });
 
-export default newText;
+export default reducers;

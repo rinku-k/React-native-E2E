@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
 });
 
 const mapStateToProps = state => ({
-  newText: state.newText,
+  newText: state.textState.newText,
 });
 
 const mapDispatchToProps = dispatch => ({

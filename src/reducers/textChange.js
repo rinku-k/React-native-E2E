@@ -3,7 +3,7 @@ const defaultState = {
   newText: 'You look new here!!!',
 }
 
-const newText = (state = defaultState, action) => {
+const textState = (state = defaultState, action) => {
   switch (action.type) {
     case 'TEMP_CHANGE':
       const clickCount = state.clickCount + 1;
@@ -16,5 +16,4 @@ const newText = (state = defaultState, action) => {
   }
 };
 
-export default newText;
-  
+export default textState;

@@ -7,10 +7,10 @@ class SampleScreen extends React.Component {
       <View style={styles.container}>
         <Text style={styles.heading}>This is next Screen</Text>
         <TouchableOpacity
-          onPress={() => { this.props.navigation.navigate('home') }}
+          onPress={() => { this.props.navigation.navigate('serverScreen') }}
           hitSlop={{top: 40, bottom: 40, left: 40, right: 40}}
         >
-          <Text style={{ color: 'blue' }}>Go Back</Text>
+          <Text style={{ color: 'blue', margin: 10 }}>Go Next Page</Text>
         </TouchableOpacity>
       </View>    
     );
